@@ -25,7 +25,7 @@ elif 'User:Resident Mario/' not in args.target and 'Wikipedia:Wikipedia Signpost
 post = requests.get(args.page).text
 
 # Core the data to the post itself.
-post = post[post.index('<div class="entry">'):]
+post = post[post.index('<div class="entry">') + len('<div class="entry">'):]
 post = post[:post.index('<div class="socials">')]
 post = post[:post.rfind('</div>')]
 
@@ -41,6 +41,8 @@ post = '''<noinclude>{{Signpost draft}}
 {{Wikipedia:Signpost/Template:Signpost-article-start|{{{1|Your title}}}|By ?| {{subst:#time:j F Y|{{subst:Wikipedia:Wikipedia Signpost/Issue|4}}}}}}
 
 </div>
+
+{{Wikipedia:Wikipedia Signpost/Templates/WM Blog}}
 
 <div style="width:46em; line-height:1.6em; font-size:1em; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; padding-left:5em;" class="plainlinks">''' + post + '''</div>
 
