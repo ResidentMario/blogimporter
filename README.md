@@ -5,7 +5,13 @@ A script that handles tedius setup tasks for the Blog section of the Wikipedia S
 
 The "Blog" is a report published as a part of the weekly "Wikipedia Signpost", a community-organized and -written internal newspaper on the English Wikipedia that covers the Wikipedia movement at large. This report republishes content from posts to the Wikimedia Blog, another popular, albiet less neautral, movement platform.
 
-Credit to the WMF's RESTBase API for its wonderful HTML-to-Wikicode conversion facilities.
+Credit is due to the Wikimedia Foundation for the flexible HTML-to-Wikicode conversion facilities baked into their API.
+
+<h2>Installation</h2>
+
+This script requires:
+* [Python 3.4.0](https://docs.python.org/3.4/)
+* [Pywikibot](https://www.mediawiki.org/wiki/Manual:Pywikibot)
 
 <h2>Inputs</h2>
 
