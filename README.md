@@ -1,4 +1,4 @@
-# Blog_Importer
+# blogimporter
 A script that handles tedius setup tasks for the Blog section of the Wikipedia Signpost.
 
 <h2>About</h2>
